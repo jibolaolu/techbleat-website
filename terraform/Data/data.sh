@@ -20,4 +20,4 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenk
 sudo yum install jenkins --nogpgcheck -y
 sudo service jenkins start
 
-sudo echo  \n jenkins ALL=(ALL) NOPASSWD:ALL >>  /etc/sudoers.d/90-cloud-init-users
+sudo echo  \n 'jenkins ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/90-cloud-init-users
