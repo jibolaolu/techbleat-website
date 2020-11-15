@@ -15,9 +15,9 @@ sudo yum install git -y
 
 
 #Install Jenkins
-sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-#sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum install jenkins --nogpgcheck -y
 sudo service jenkins start
 
-sudo echo  \n 'jenkins ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/90-cloud-init-users
+sudo echo  'jenkins ALL=(ALL) NOPASSWD:ALL' >>  /etc/sudoers.d/90-cloud-init-users
